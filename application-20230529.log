@@ -1,0 +1,7 @@
+2023-05-29 13:48:26.664 [main] INFO  D4C.application.Application - Working
+2023-05-29 13:48:29.238 [main] INFO  D4C.application.Application - Working
+2023-05-29 13:48:45.263 [main] INFO  D4C.application.Application - Working
+2023-05-29 13:50:45.898 [main] TRACE D4C.application.Application - Working
+2023-05-29 13:52:45.671 [main] DEBUG D4C.Main - Debug Message Logged !!!
+2023-05-29 13:53:09.310 [main] DEBUG D4C.Main - Debug Message Logged !!!
+2023-05-29 13:53:09.316 [main] INFO  D4C.application.Application - Working
