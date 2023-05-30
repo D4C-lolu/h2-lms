@@ -5,25 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76d80374-27c3-474c-8b3b-3b59ce489f8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/D4C/application/AdminMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/D4C/application/StudentMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/D4C/library/user/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/D4C/library/user/AdminDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/D4C/library/user/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/library/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/library/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/library/book/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/library/book/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/library/book/BookDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/library/user/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/library/manager/BookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/library/manager/BookManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/library/manager/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/library/manager/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/library/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/library/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/library/user/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/library/user/UserDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/library/user/YearAttributeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/library/user/YearAttributeConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/util/HibernateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +23,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
