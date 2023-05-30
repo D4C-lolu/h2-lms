@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76d80374-27c3-474c-8b3b-3b59ce489f8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Entities/BookDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Entities/BookManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Entities/StudentDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Entities/UserManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application-20230530.log" beforeDir="false" afterPath="$PROJECT_DIR$/application-20230530.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/test.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/test.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/test.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/test.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/D4C/library/book/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/D4C/library/book/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Entities/BookDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Entities/BookDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Entities/StudentDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Entities/StudentDAOTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -7,7 +7,7 @@ import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BookDAOTest {
@@ -16,8 +16,8 @@ public class BookDAOTest {
     @BeforeEach
     void setUp() {
         entityManager = HibernateUtil.getSessionFactory().createEntityManager();
-        Book book1 = new Book("ABC", "Chinua Achebe", "Historical Fiction", "10505", true);
-        Book book2 = new Book("Arrow of God", "Chinua Achebe", "Historical Fiction", "23223", true);
+        Book book1 = new Book("ABC", "Chinua Achebe", "Historical Fiction", "10505");
+        Book book2 = new Book("Arrow of God", "Chinua Achebe", "Historical Fiction", "23223");
         BookDAO.insertBook(entityManager,book1);
         BookDAO.insertBook(entityManager,book2);
     }
@@ -47,7 +47,7 @@ public class BookDAOTest {
 
     @Test
     void testNumberOfBooksAddedReflectsPreviousAdditons(){
-        List<Book> bookList = BookDAO.getAllBooks();
+        List<Book> bookList = BookDAO.getAllBooks(entityManager);
         assertTrue(bookList.size()>0);
     }
 
