@@ -3,6 +3,10 @@ package D4C.library.user;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 
+
+/**
+ * Utility class to convert enum to a form that can be stored in the DB
+ */
 @Converter
 public class YearAttributeConverter implements AttributeConverter<Year, Integer> {
     @Override

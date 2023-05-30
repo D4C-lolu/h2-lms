@@ -5,12 +5,17 @@ import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import jakarta.persistence.EntityManagerFactory;
 
+
+/**
+ * Utility class for connecting to DB instance
+ */
 public class HibernateUtil {
     private static StandardServiceRegistry registry;
-    private static SessionFactory sessionFactory;
+    private static EntityManagerFactory sessionFactory;
 
-    public static SessionFactory getSessionFactory() {
+    public static EntityManagerFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
                 // Create registry

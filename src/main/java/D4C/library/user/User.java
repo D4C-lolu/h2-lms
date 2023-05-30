@@ -4,13 +4,11 @@ import jakarta.persistence.*;
 import org.passay.CharacterRule;
 import org.passay.EnglishCharacterData;
 import org.passay.PasswordGenerator;
-import D4C.library.book.Book;
 
 /**
  * A class representing a user.
  */
-@Entity
-@Table(name = "user")
+@MappedSuperclass
 public class User {
 
     @Id
@@ -24,28 +22,12 @@ public class User {
     @Column(name = "last_name")
     private final String lastName;
 
-    @Column(name = "matric_no")
-    private final long matricNo;
-
-    @Convert(converter = YearAttributeConverter.class)
-    @Column(name = "year")
-    private final Year year;
-
     @Column(name = "password")
     private String password;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinTable(name = "borrowed_book",
-            joinColumns = {@JoinColumn( name = "user_id", referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(name = "book_id", referencedColumnName = "id")}
-    )
-    private Book borrowedBook;
-
-    public User(String firstName, String lastName, long matricNo, Year year) {
+    public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.matricNo = matricNo;
-        this.year = year;
         this.password = generatePassword();
     }
 
@@ -61,20 +43,13 @@ public class User {
         return lastName;
     }
 
-    public long getMatricNo() {
-        return matricNo;
+    public String getName() {
+        return firstName + " " + lastName;
     }
 
-    public Year getYear() {
-        return year;
-    }
 
     public String getPassword() {
         return password;
-    }
-
-    public Book getBorrowedBook() {
-        return borrowedBook;
     }
 
     /**
@@ -100,22 +75,26 @@ public class User {
         CharacterRule SR = new CharacterRule(EnglishCharacterData.Special);
         // set number of special characters
         SR.setNumberOfCharacters(2);
-        // create instance of the PasswordGenerator class
         PasswordGenerator passGen = new PasswordGenerator();
-        // call generatePassword() method of PasswordGenerator class to get Passay generated password
         String password = passGen.generatePassword(8, SR, LCR, UCR, DR);
-        // return Passay generated password to the main() method
+
         return password;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", matricNo=" + matricNo +
-                ", year=" + year +
-                '}';
+    /**
+     * Method to reset password field
+     *
+     */
+    public void updatePassword(){
+        this.password = generatePassword();
     }
+
+    public boolean comparePassword(String passcode){
+        if (this.password.equals(passcode)){
+            return true;
+        }
+        return false;
+    }
+
+
 }

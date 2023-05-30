@@ -27,8 +27,6 @@ public class Book {
     @Column(name = "isbn")
     private final String ISBN;
 
-    @OneToOne(mappedBy = "book")
-    private User user;
 
     /**
      * @param bookName   string representing the name of the book
@@ -62,10 +60,6 @@ public class Book {
 
     public String getISBN() {
         return ISBN;
-    }
-
-    public boolean isAvailable() {
-        return user == null;
     }
 
     @Override
