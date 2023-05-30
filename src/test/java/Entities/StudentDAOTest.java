@@ -11,6 +11,8 @@ import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 public class StudentDAOTest {
     EntityManager entityManager;
@@ -26,7 +28,23 @@ public class StudentDAOTest {
     @AfterEach
     void tearDown(){
         HibernateUtil.shutdown();
+
     }
 
-    
+    @Test
+    void testStudentIsAdded(){
+        Student s = new Student("Temi","Lade",170402514,Year.SIX);
+        StudentDAO.insertStudent(entityManager,s);
+        //Check that student s is not null
+        Student sr = StudentDAO.getStudent(entityManager,s.getId());
+        assertNotNull(sr);
+    }
+
+    @Test
+    void testStudentAddedisStudentQueried(){
+        Student l = new Student("Demi","Lade",170122514,Year.SIX);
+        StudentDAO.insertStudent(entityManager,l);
+        Student sr = StudentDAO.getStudent(entityManager,l.getId());
+        assertEquals(l,sr);
+    }
 }
