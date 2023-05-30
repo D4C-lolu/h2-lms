@@ -12,7 +12,6 @@ import java.util.List;
  */
 public class BookDAO {
 
-
     public static void insertBook(EntityManager entityManager, Book b) {
         entityManager.getTransaction().begin();
         // save the Student object

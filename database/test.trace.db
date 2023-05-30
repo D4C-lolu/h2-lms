@@ -1,0 +1,6 @@
+2023-05-30 15:53:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table PUBLIC.student (defaulting boolean, [*]year integer, id bigint not null, matric_no bigint, first_name varchar(255), last_name varchar(255), password varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table PUBLIC.student (defaulting boolean, year integer, id bigint not null, matric_no bigint, first_name varchar(255), last_name varchar(255), password varchar(255), primary key (id)) [42001-212]
+2023-05-30 15:53:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+alter table if exists PUBLIC.borrowed_book add constraint FKhhgs4ikkrm56e31ugh8o359ag foreign key (student_id) references PUBLIC.student [42102-212]
